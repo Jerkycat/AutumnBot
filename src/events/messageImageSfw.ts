@@ -16,7 +16,7 @@ export default class ImageMessage implements Event {
             if (!this.isValidImage(image)) return;
 
             let postsLinks = '## Links\n';
-            const postMessage = `${message.content ? `"${message.content.slice(0, 200)}" ` : ''}por ${message.author.username}`;
+            const postMessage = `${message.content ? `"${message.content.slice(0, 175)}" ` : ''}enviado por ${message.author.username} em nosso discord!`;
 
             const downloaded = await this.downloadImage(image);
             if (!downloaded) return;
