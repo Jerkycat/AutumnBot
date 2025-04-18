@@ -1,0 +1,42 @@
+{
+    "name": "yumu-core",
+    "version": "1.1.0",
+    "description": "Just another discord bot boilerplate.",
+    "main": "dist/index.js",
+    "author": "Vitor Lach <contact@vitu2002.dev>",
+    "license": "MIT",
+    "private": false,
+    "engines": {
+        "node": ">=18"
+    },
+    "scripts": {
+        "build": "tsup src",
+        "dev": "tsx watch src/index.ts",
+        "start": "node dist/index.js",
+        "start:dev": "tsx src/index.ts"
+    },
+    "devDependencies": {
+        "@types/ms": "^0.7.34",
+        "@types/os-utils": "^0.0.4",
+        "eslint": "^8.55.0",
+        "eslint-config-prettier": "^9.1.0",
+        "eslint-plugin-prettier": "^5.0.1",
+        "prettier": "^3.1.0",
+        "prettier-plugin-prisma": "^5.0.0",
+        "tsup": "^8.0.1",
+        "tsx": "^4.6.2",
+        "typescript": "^5.3.2"
+    },
+    "dependencies": {
+        "@skyware/bot": "^0.3.8",
+        "axios": "^1.7.9",
+        "colors": "1.4.0",
+        "dayjs": "^1.11.10",
+        "discord.js": "^14.14.1",
+        "dotenv": "^16.3.1",
+        "os-utils": "^0.0.14",
+        "sharp": "^0.33.5",
+        "twitter-api-v2": "^1.19.0"
+    },
+    "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
+}

@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  autumn_bot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: autumn_bot
+    environment:
+      - NODE_ENV=production
+    command: yarn start
+    restart: unless-stopped
